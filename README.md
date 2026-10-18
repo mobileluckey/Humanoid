@@ -1,194 +1,68 @@
-# HumanoidAssitantRobot
+# Humanoid
 
-## Key Sections:
+### Built by Hand. Bound for Space.
 
-1. **Core Innovation** - Clear statement of the anticipatory AI focus
-2. **What Makes This Different** - 4 major differentiators
-3. **Technical Innovations** - Concrete architectural details with code examples
-4. **Key Differentiators Table** - Easy comparison with traditional robots
-5. **Research Contributions** - Academic/scientific value
-6. **Success Metrics** - Measurable goals
-7. **Open Source Contributions** - What you're giving back to the community
-8. **Future Extensions** - Roadmap for expanding the innovation
-9. **Development Philosophy** - Your approach and values
+A **5'9", 29-joint bipedal humanoid robot**, designed and built from scratch: no kit, no off-the-shelf frame. It's an anticipatory personal assistant here on Earth, and a step toward robotics for space.
 
-## Suggested GitHub Structure:
-
-```
-README.md (overview + getting started)
-INNOVATION.md (this document)
-docs/
-├── BUILD_GUIDE.md
-├── DEVELOPMENT_PLAN.md (Month-by-month timeline)
-├── TERMS_GUIDE.md (Glossary)
-└── RESEARCH_NOTES.md
-```
-
-## What Makes This Stand Out:
-
-- **Specific examples** of anticipatory behaviors
-- **Technical details** (LSTM architecture, confidence scoring)
-- **Privacy focus** (edge computing, user control)
-- **Measurable goals** (70% accuracy targets)
-- **Clear differentiation** from existing solutions
-
-
-# Innovation Statement: Anticipatory Humanoid Assistant
-
-## Core Innovation: Predictive Personal Assistance Through Continuous Learning
-
-This project represents a novel approach to humanoid robotics by focusing on **anticipatory AI** rather than just reactive behavior. Unlike traditional assistant robots that wait for commands, this system learns your routines, predicts your needs, and proactively assists before being asked.
-
-## What Makes This Different
-
-### 1. **Continuous Learning Architecture**
-- Real-time pattern recognition that adapts to your daily routines
-- Experience replay system preventing catastrophic forgetting
-- Incremental training pipeline that improves daily without human supervision
-- Self-updating predictive models that evolve with your lifestyle changes
-
-### 2. **Context-Aware Anticipation**
-Rather than simple automation, the system builds a rich contextual understanding:
-- Temporal patterns (time of day, day of week, seasonal variations)
-- Spatial awareness (location-based behavior predictions)
-- Activity recognition (understanding what you're doing, not just where you are)
-- Object-use correlation (learning which items you need for specific activities)
-
-### 3. **Hybrid Rule-Based + ML Approach**
-- **Phase 1**: Rule-based prediction engine for immediate functionality
-- **Phase 2**: LSTM-based neural network with attention mechanisms
-- **Phase 3**: Hybrid system combining explicit rules with learned patterns
-- Confidence scoring to prevent false positives and annoying interruptions
-
-### 4. **Privacy-Preserving Learning**
-All learning happens on-device (edge computing):
-- No cloud dependency for core AI functions
-- Complete user control over learned data
-- Selective forgetting and data deletion capabilities
-- Transparent learning dashboard showing what patterns are stored
-
-## Technical Innovations
-
-### Pattern Recognition Pipeline
-```
-Input Layer: [time_features, location, recent_actions, objects, user_state]
-    ↓
-LSTM Layer (128 units) - temporal pattern capture
-    ↓
-Attention Layer - contextual focus
-    ↓
-Dense Layers (64, 32 units) - decision making
-    ↓
-Output: [predicted_need, confidence_score, suggested_action]
-```
-
-### Feedback Integration System
-- **Explicit feedback**: Voice commands ("that was helpful" / "I didn't need that")
-- **Implicit feedback**: Behavioral indicators (did user accept the assistance?)
-- **Weighted learning**: Recent feedback weighted higher than old patterns
-- **Forgetting mechanism**: Unused patterns gradually decay
-
-### Proactive Behavior Examples
-
-**Morning Routine Prediction:**
-```
-IF time == 7:00 AM AND location == kitchen AND day == weekday
-THEN confidence(breakfast_prep) = 0.85
-→ ACTION: Position near coffee maker, prepare to hand supplies
-```
-
-**Work Mode Adaptation:**
-```
-IF user_sits_at_desk AND time IN work_hours AND last_water_time > 90min
-THEN confidence(needs_water) = 0.73
-→ ACTION: Offer water bottle before being asked
-```
-
-**Departure Assistance:**
-```
-IF user_picks_up_keys AND time NEAR typical_departure AND items=[jacket, bag] NOT in_hand
-THEN confidence(leaving_soon) = 0.91
-→ ACTION: Retrieve commonly forgotten items proactively
-```
-
-## Key Differentiators from Existing Robots
-
-| Feature | Traditional Robots | This Project |
-|---------|-------------------|--------------|
-| **Interaction Model** | Command → Response | Prediction → Proactive Action |
-| **Learning** | Static programming | Continuous adaptation |
-| **Personalization** | Settings/profiles | Automatic routine learning |
-| **Intelligence** | Fixed behaviors | Growing understanding |
-| **Privacy** | Cloud-dependent | On-device processing |
-| **User Control** | Binary on/off | Granular control + transparency |
-
-## Research Contributions
-
-### 1. **Catastrophic Forgetting Prevention in Humanoid Robotics**
-Novel application of experience replay and elastic weight consolidation to personal assistant robots operating in dynamic home environments.
-
-### 2. **Implicit Feedback Learning**
-Framework for learning from user behavior without explicit training, reducing the burden on the user while maintaining high prediction accuracy.
-
-### 3. **Confidence-Based Proactive Intervention**
-Threshold system that balances helpfulness against annoyance by adjusting anticipatory behavior based on confidence scores and past success rates.
-
-### 4. **Routine Segmentation Algorithm**
-Automatic identification and clustering of daily routine patterns using unsupervised learning on temporal-spatial data.
-
-## Success Metrics
-
-The innovation will be measured by:
-
-1. **Anticipation Accuracy**: Target >70% for routine actions
-2. **False Positive Rate**: Keep <15% to avoid annoyance
-3. **Learning Speed**: Recognize new routines within 1-2 weeks
-4. **Adaptation Speed**: Adjust to routine changes within 3-5 days
-5. **User Satisfaction**: Track acceptance rate of proactive actions
-
-## Open Source Contribution
-
-This project makes several reusable contributions to the robotics community:
-
-- **Anticipatory AI framework** adaptable to any assistant robot
-- **Continuous learning pipeline** for edge devices with limited compute
-- **Privacy-preserving personal pattern recognition** system
-- **User control interface** for transparent AI systems
-- **Dataset of human routine patterns** (anonymized, opt-in)
-
-## Future Extensions
-
-The anticipatory framework enables future capabilities:
-- Multi-person household adaptation
-- Collaborative task anticipation ("you'll need this for that project")
-- Health monitoring and wellness suggestions
-- Emergency pattern detection (unusual behavior alerts)
-- Smart home integration for environmental anticipation
-
-## Philosophical Approach
-
-This project embodies a specific vision of human-robot interaction:
-
-> **"The best assistant is one you don't have to ask."**
-
-Rather than creating a robot that follows orders perfectly, this project aims to create a genuine assistant that understands your life well enough to help proactively—while maintaining complete transparency and user control over what it learns and how it acts.
+**Michael J. Caruana**, independent robotics engineer
+[mjcaruana.com](https://mjcaruana.com) · [GitHub](https://github.com/mobileluckey) · [Support the build](https://gofundme.com/u/michael-caruana)
 
 ---
 
-## Development Philosophy
+## At a glance
 
-- **Iterate rapidly**: MVP first, perfection later
-- **Learn from failures**: Track what doesn't work to improve predictions
-- **User agency**: Always give humans override control
-- **Transparent AI**: Show what's learned and why decisions are made
-- **Privacy by design**: On-device processing as default
-- **Open science**: Document failures and successes for the community
+| | |
+|---|---|
+| **Scale** | 5'9" (1.75 m), 29 actuated joints including articulated hands |
+| **Structure** | 3D-printed carbon-fiber composite, designed in CAD |
+| **Electronics** | Custom-designed circuit boards; distributed real-time controllers on a high-speed CAN-FD bus |
+| **Intelligence** | LLM-based reasoning layer over deterministic real-time control; on-device learning |
+| **Method** | Every architecture decision is backed by a measured, published experiment |
 
-## License Note
+## Latest result: [Exp01, IMU Bridge Latency](experiments/exp01-imu-bridge-latency/)
 
-While the hardware designs and core software are open source, users retain full ownership of their personal behavioral data and learned patterns. The AI framework is designed to never transmit personal data externally without explicit consent.
+Measured the link between the robot's real-time controller and its Linux "thinking" processor across three runs and 153,808 samples:
+
+- **About 6 ms typical, up to about 23 ms worst case.** So balance and joint control must stay on the microcontroller.
+- **Robust to load.** With the Linux CPU at 100%, the MCU dropped zero samples and typical latency rose only 0.4 ms.
+- **Found and fixed a hardware-level sensor glitch** (an IMU register byte tear) and identified gimbal lock in the attitude filter, which drove the move to quaternions.
+
+<p align="center"><img src="experiments/exp01-imu-bridge-latency/results/run3-load.png" width="600" alt="Exp01 run 3: latency, sample timing and attitude under full CPU load"></p>
+
+## Repository guide
+
+| Where | What |
+|---|---|
+| **[docs/ARCHITECTURE.md](docs/ARCHITECTURE.md)** | The two-brain control design, and a log of design decisions with the evidence for each |
+| **[docs/INNOVATION.md](docs/INNOVATION.md)** | The vision: an assistant that anticipates needs, with on-device, privacy-first learning |
+| **[experiments/](experiments/)** | Subsystem experiments, each with code, raw data, analysis and conclusions |
+
+## Experiments
+
+| # | Experiment | Status |
+|---|---|---|
+| 01 | [IMU Bridge Latency](experiments/exp01-imu-bridge-latency/): real-time ↔ Linux link timing | ✅ Complete |
+| 02 | Voice command pipeline: hear → decide → act | 🔜 Planned |
+| 03 | Vision and stereo cameras for the head | 🔜 Planned |
+| 04 | Battery state-of-health tracking | 🔜 Planned |
+| 05 | CAN-FD actuator bring-up | 🔜 Planned |
+
+## The vision
+
+Most assistant robots wait for a command. This one is meant to **learn your routines and help before you ask**, with all learning on-device so your data stays yours.
+
+> *"The best assistant is one you don't have to ask."*
+
+[Read the full innovation statement →](docs/INNOVATION.md)
+
+## Skills on display
+
+- **Embedded and real-time:** C++ on STM32, fixed-rate control loops, sensor fusion, register-level I²C debugging
+- **Systems:** two-processor architecture, Bridge RPC interface design, clock synchronization, latency and jitter analysis
+- **Software and AI:** Python, data analysis (pandas, NumPy, matplotlib), LLM-agent and continuous-learning system design
+- **Mechanical and electrical:** CAD, carbon-fiber additive manufacturing, PCB design, battery and power-system design
+- **Method:** hypothesis → measurement → published raw data → design decision
 
 ---
 
-**This isn't just another humanoid robot—it's a research platform for exploring how AI can genuinely understand and adapt to human needs while respecting privacy and autonomy.**
-
+*Follow the build at [mjcaruana.com](https://mjcaruana.com).*
